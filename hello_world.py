@@ -1,1 +1,1 @@
-print ("lol")
+print ("isaac is ma name")
