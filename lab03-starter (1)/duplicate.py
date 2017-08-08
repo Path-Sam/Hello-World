@@ -28,9 +28,11 @@ def singlify(str):
     while i < total:
         if not (list[i] in BIGlist):
             BIGlist.append(list[i])
-            retStr += list[i] + " "
-        i += 1
 
+        i += 1
+    BIGlist.sort()
+    for i in BIGlist:
+        retStr += i + " "
     return retStr
 
 print(singlify(sentence))

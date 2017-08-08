@@ -12,13 +12,16 @@ to the standard output. You may assume that your
 program will be tested with valid inputs only.
 '''
 
-index = input()
+index = int(input())
 
 
 # Define this function to return the expected output
 # Do not print it from this function
 def fib_sequence(num):
-    
-    pass
-
+	if num == 0:
+		return 0
+	elif num == 1:
+		return 1
+	else:
+		return (fib_sequence(num - 1) + fib_sequence(num-2))
 print(fib_sequence(index))
